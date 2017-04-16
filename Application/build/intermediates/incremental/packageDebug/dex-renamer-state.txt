@@ -1,0 +1,7 @@
+#Sun Apr 16 13:05:26 MDT 2017
+base.0=C\:\\Users\\joshr\\Desktop\\MotoHelm\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_a87e6f250866427e93b55db8fcb80635219d5043
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\joshr\\Desktop\\MotoHelm\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_c2acb187037c6971b2ca7b32e92d502db6f37dfe\\classes.dex
+base.1=C\:\\Users\\joshr\\Desktop\\MotoHelm\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_c2acb187037c6971b2ca7b32e92d502db6f37dfe
+file.0=C\:\\Users\\joshr\\Desktop\\MotoHelm\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_a87e6f250866427e93b55db8fcb80635219d5043\\classes.dex
