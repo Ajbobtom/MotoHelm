@@ -23,7 +23,8 @@
         android:text="Record"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/record_switch" />
+        android:id="@+id/record_switch"
+        android:checked="true" />
 
     <Switch
         android:text="Display"

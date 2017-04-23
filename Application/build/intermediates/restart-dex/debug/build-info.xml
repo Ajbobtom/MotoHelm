@@ -5,29 +5,29 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="395682413526124"
+    timestamp="134175582165727"
     token="-4207424982908510289"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1036" />
+        duration="18058" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1923" />
+        duration="811" />
     <task
         name="verifier"
-        duration="547" />
+        duration="10" />
 
     <artifact
         location="C:\Users\joshr\Desktop\MotoHelm\Application\build\outputs\apk\Application-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="395682413526124"
+        timestamp="430513047341077"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\joshr\Desktop\MotoHelm\Application\build\outputs\apk\Application-debug.apk"

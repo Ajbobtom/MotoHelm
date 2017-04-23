@@ -27,6 +27,7 @@ import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.ShareCompat;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -192,7 +193,7 @@ public class BluetoothChatFragment extends Fragment   {
                     TextView textView = (TextView) view.findViewById(R.id.edit_text_out);
                     String message = textView.getText().toString(); //append other things here, or do a second send.
                     SharedValues.Destination = message;
-
+                    SharedValues.DirecRequest = true; //we recieved a placeto go.
                     //construct first time info for pi
                     //%? first string and initialization parameters
                     //Set the initial states for all switches here
@@ -211,7 +212,7 @@ public class BluetoothChatFragment extends Fragment   {
                     //Display
 
 
-
+                    Log.d("Send Message: ", "We asked for directions to: " +SharedValues.Destination);
 
                     //send init parameters
                     message = Settings +"\n";
@@ -317,8 +318,7 @@ public class BluetoothChatFragment extends Fragment   {
         actionBar.setSubtitle(subTitle);
     }
     public void acknowledge(){
-        sendMessage("UPDATE");
-    Toast.makeText(getContext(), "UPDATED",Toast.LENGTH_LONG).show();
+
     }
     /**
      * The Handler that gets information back from the BluetoothChatService
@@ -356,10 +356,12 @@ public class BluetoothChatFragment extends Fragment   {
 
                     String readMessage = new String(readBuf, 0, msg.arg1);
                     if(readMessage.contentEquals("@?")) {
-                        BluetoothChatFragment.this.sendMessage("FUUU");
+                        //build messag here
+                        SharedValues.Instructor(); //builds the message to send
+                        BluetoothChatFragment.this.sendMessage(SharedValues.Message);
                     }
 
-                    mConversationArrayAdapter.add(mConnectedDeviceName + ":  " + readMessage);
+                    //mConversationArrayAdapter.add(mConnectedDeviceName + ":  " + readMessage);
                     //send new information out update
 
                     break;
