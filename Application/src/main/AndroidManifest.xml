@@ -22,7 +22,13 @@
     android:versionName="1.0">
 
     <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
-
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
 
@@ -51,7 +57,10 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
+        <service
+            android:name=".LocationSErvice"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
